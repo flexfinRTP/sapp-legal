@@ -1,6 +1,6 @@
 # Privacy Policy for SApp
 
-**Last Updated: January 2025**
+**Last Updated: November 2025**
 
 ## Overview
 
@@ -208,5 +208,5 @@ This Privacy Policy is written in plain language because we believe privacy poli
 
 ---
 
-*This privacy policy is effective as of January 2025 and applies to all versions of SApp.*
+*This privacy policy is effective as of November 2025 and applies to all versions of SApp.*
 

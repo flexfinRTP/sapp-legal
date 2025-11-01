@@ -13,5 +13,5 @@ Legal documents for the SApp mobile application, hosted on GitHub Pages.
 
 ---
 
-*Last Updated: January 2025*
+*Last Updated: November 2025*
 

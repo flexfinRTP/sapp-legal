@@ -1,6 +1,6 @@
 # Terms of Service for SApp
 
-**Last Updated: January 2025**
+**Last Updated: November 2025**
 
 ## 1. Acceptance of Terms
 
@@ -280,5 +280,5 @@ If you have questions about these Terms:
 
 **BY USING SAPP, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE.**
 
-*Effective Date: January 2025*
+*Effective Date: November 2025*
 
