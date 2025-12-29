@@ -1,103 +1,61 @@
-# Terms of Service for SApp
+# Terms of Service for Genesis - Sober & Free
 
-**Last Updated: November 2025**
+**Last Updated: December 2025**
 
 ## 1. Acceptance of Terms
 
-By downloading, installing, or using SApp ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.
-
-By subscribing to SApp, you agree to the subscription terms, pricing, and automatic renewal unless cancelled.
+By downloading, installing, or using Genesis - Sober & Free ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.
 
 ## 2. Description of Service
 
-SApp is a **personal lifestyle tracking application** that provides tools to:
-- Track personal habits and goals
-- Log weight and BMI measurements
-- Plan exercise routines
-- Monitor personal progress
+Genesis is a **personal recovery and lifestyle tracking application** that provides tools to:
+- Track sobriety/clean time for 17 addiction types
+- Log cravings and analyze HALT triggers (Hungry, Angry, Lonely, Tired)
+- Monitor weight and BMI measurements
+- Plan exercise routines with 50+ exercises
+- View faith-based motivational messages across 8 traditions
+- Create shareable achievement cards for milestones
 - Export and import personal data backups
 
-**SApp is NOT a medical device, medical service, or healthcare provider.**
+**Genesis is NOT a medical device, medical service, or healthcare provider.**
 
-## 3. No Medical Advice
+## 3. 100% Free Service
 
-### 3.1 Informational Purposes Only
+Genesis is **completely free** with all features unlocked:
+- ✅ No subscriptions required
+- ✅ No in-app purchases
+- ✅ No premium tiers or paywalls
+- ✅ No ads - ever
+- ✅ All features available from day one
+
+Recovery shouldn't have a paywall. All features are free, forever.
+
+## 4. No Medical Advice
+
+### 4.1 Informational Purposes Only
 All information, features, and tools provided in the App are for **general informational and personal tracking purposes only**. The App does not provide medical advice, diagnosis, or treatment.
 
-### 3.2 Not a Substitute for Professional Care
-The App is **not intended to be a substitute** for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
+### 4.2 Not a Substitute for Professional Care
+The App is **not intended to be a substitute** for professional medical advice, diagnosis, treatment, or addiction recovery services. Always seek the advice of your physician, addiction counselor, or other qualified health provider with any questions you may have regarding a medical condition or addiction.
 
-### 3.3 No Doctor-Patient Relationship
+### 4.3 No Doctor-Patient Relationship
 Use of the App does not create a doctor-patient or healthcare provider-patient relationship.
 
-### 3.4 Emergency Situations
+### 4.4 Emergency Situations
 **If you are experiencing a medical emergency or mental health crisis, call emergency services immediately (911 in the US, 112 in EU, or your local emergency number). Do not rely on the App for emergency assistance.**
-
-## 4. Subscription & Billing
-
-### 4.1 Subscription Plans
-SApp is offered as a subscription service:
-- **Free Trial Period:** 14 days from first installation
-- **Subscription Price:** $4.99/month (USD)
-- **Billing Cycle:** Monthly, starting after trial ends
-- **Payment:** Processed through Google Play Store only
-
-### 4.2 Free Trial
-- No payment required to start the 14-day free trial
-- Full access to all features during trial period
-- You may cancel anytime during the trial without charge
-- If not cancelled, subscription automatically begins after trial ends
-- Only one free trial per user/device
-
-### 4.3 Automatic Renewal
-- Subscriptions automatically renew each month unless cancelled
-- You will be charged through your Google Play account
-- Charges occur 24 hours before the end of the current period
-- Cancel at least 24 hours before renewal to avoid being charged
-- Manage subscription and cancellation through Google Play Store settings
-
-### 4.4 Cancellation & Refunds
-- **Cancel Anytime:** Cancel your subscription through Google Play Store
-- **No Partial Refunds:** Cancellation takes effect at end of current billing period
-- **Continued Access:** Keep access until current paid period ends
-- **Refund Requests:** Contact Google Play Store support for refund inquiries
-- **Trial Cancellation:** Cancel during trial = no charges
-- **No Refunds After Renewal:** Once charged, subscription is non-refundable per Google Play policy
-
-### 4.5 Price Changes
-- We reserve the right to change subscription prices
-- Price changes will be communicated at least 30 days in advance
-- Existing subscribers grandfathered for at least one billing cycle
-- Continue using = acceptance of new price
-- Cancel before new price takes effect to avoid charges
-
-### 4.6 Payment Processing
-- All payments processed by Google Play Store
-- Subject to Google's payment terms and policies
-- We do NOT store or process payment information directly
-- Payment issues should be resolved through Google Play support
-
-### 4.7 Subscription Requirements
-- Valid Google Play account required
-- Valid payment method on file with Google
-- Responsibility to maintain current payment information
-- Subscription may be suspended if payment fails
 
 ## 5. User Responsibilities
 
 ### 5.1 Personal Use Only
-The App is intended for personal, non-commercial use only. You agree to use the App solely for your own personal wellness tracking.
+The App is intended for personal, non-commercial use only. You agree to use the App solely for your own personal recovery and wellness tracking.
 
 ### 5.2 Accurate Information
 You are responsible for the accuracy of any information you enter into the App. The App's calculations and displays are only as accurate as the data you provide.
 
 ### 5.3 Age Requirement
-You must be at least 13 years old to use the App. If you are under 18, you should use the App with parental guidance and parental consent for subscriptions.
+You must be at least 13 years old to use the App. If you are under 18, you should use the App with parental guidance.
 
-### 5.4 Account in Good Standing
-You must maintain an active subscription (or be in trial period) to access App features. Lapsed subscriptions will result in restricted access.
-
-### 5.5 Prohibited Uses
+### 5.4 Prohibited Uses
 You agree NOT to:
 - Use the App for any illegal purpose
 - Attempt to reverse engineer or decompile the App
@@ -117,15 +75,15 @@ You are solely responsible for:
 - Any data loss from device failure, loss, or theft
 
 ### 6.3 Privacy Policy
-Please review our Privacy Policy for detailed information about how the App handles data.
+Please review our [Privacy Policy](privacy-policy.html) for detailed information about how the App handles data.
 
 ## 7. External Links and Resources
 
 ### 7.1 Third-Party Services
 The App provides links to external resources, including:
-- Emergency hotlines
-- Support groups
-- Educational websites
+- Emergency hotlines and crisis support
+- AA/NA meeting finder resources
+- Online support community links
 
 ### 7.2 No Endorsement
 These links are provided for convenience only. We do not endorse, control, or take responsibility for the content, privacy practices, or services of any third-party websites or phone services.
@@ -144,7 +102,7 @@ THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF
 
 ### 8.2 No Guarantee of Results
 We make no representations or warranties that:
-- The App will help you achieve any specific health or wellness goals
+- The App will help you achieve any specific recovery or wellness goals
 - The App will be error-free or uninterrupted
 - The App's calculations will always be accurate
 - Data will never be lost due to device issues
@@ -154,17 +112,9 @@ TO THE MAXIMUM EXTENT PERMITTED BY LAW:
 - We are not liable for any indirect, incidental, special, consequential, or punitive damages
 - We are not liable for any loss of data, revenue, profits, or opportunities
 - We are not liable for any personal injury or health issues
-- Our total liability shall not exceed the amount you paid for the App in the 12 months preceding the claim (maximum $59.88)
 
-### 8.4 No Refunds for Service Issues
-We are not responsible for:
-- Issues with Google Play billing or payment processing
-- Subscription charges if you failed to cancel
-- Loss of data due to device issues or user error
-- Interruptions in service due to maintenance or updates
-
-### 8.5 Health and Safety
-**CRITICAL:** We are not liable for any health-related decisions you make based on the App's tools or information. Always consult qualified healthcare professionals for health decisions.
+### 8.4 Health and Safety
+**CRITICAL:** We are not liable for any health-related or recovery-related decisions you make based on the App's tools or information. Always consult qualified healthcare professionals and addiction specialists for health and recovery decisions.
 
 ## 9. Intellectual Property
 
@@ -172,24 +122,18 @@ We are not responsible for:
 Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to use the App for personal purposes.
 
 ### 9.2 Ownership
-The App, including its code, design, features, and content, is owned by SApp and protected by intellectual property laws.
+The App, including its code, design, features, and content, is owned by Genesis and protected by intellectual property laws.
 
 ### 9.3 Open Source
-Portions of the App may be available under open-source licenses (see LICENSE file). Those components are governed by their respective licenses.
+Portions of the App may be available under open-source licenses. Those components are governed by their respective licenses.
 
 ## 10. Data Export and Portability
 
 ### 10.1 Your Data Ownership
 You own all data you create in the App. You may export your data at any time using the App's export feature.
 
-### 10.2 Access After Cancellation
-- You retain access to the App until the end of your current paid period
-- After subscription ends, the App becomes read-only
-- You can still export your data after subscription ends
-- Data remains on your device until you delete it or uninstall
-
-### 10.3 Backup Files
-Exported backup files (.sra files) are your property. You are responsible for:
+### 10.2 Backup Files
+Exported backup files are your property. You are responsible for:
 - Storing them securely
 - Not sharing them in ways that violate privacy
 - Managing access to these files
@@ -211,32 +155,24 @@ Continued use of the App after updates constitutes acceptance of the updated ver
 ## 12. Termination
 
 ### 12.1 Your Right to Terminate
-You may stop using the App at any time by:
-- Cancelling your subscription through Google Play Store
-- Uninstalling the App from your device
+You may stop using the App at any time by uninstalling the App from your device.
 
 ### 12.2 Our Right to Terminate
 We may suspend or terminate your access if:
 - You violate these Terms
-- You engage in fraudulent billing activity
 - You abuse or misuse the App
 - Required by law
 
 ### 12.3 Effect of Termination
 Upon termination:
 - Your license to use the App ends
-- No refund for remaining subscription period
 - You may export your data before uninstalling
-- You should delete all copies of the App (or retain backups at your discretion)
 - All disclaimers and limitations of liability survive termination
-
-### 12.4 No Refunds on Termination
-If we terminate your account for Terms violations, you are not entitled to a refund of any subscription fees.
 
 ## 13. General Provisions
 
 ### 13.1 Entire Agreement
-These Terms, together with the Privacy Policy, constitute the entire agreement between you and SApp regarding use of the App.
+These Terms, together with the Privacy Policy, constitute the entire agreement between you and Genesis regarding use of the App.
 
 ### 13.2 Severability
 If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in full effect.
@@ -248,10 +184,10 @@ Our failure to enforce any right or provision of these Terms will not constitute
 You may not assign or transfer these Terms. We may assign our rights and obligations without restriction.
 
 ### 13.5 Governing Law
-These Terms are governed by the laws of [Your Jurisdiction - to be specified], without regard to conflict of law provisions.
+These Terms are governed by the laws of the United States, without regard to conflict of law provisions.
 
 ### 13.6 Dispute Resolution
-Any disputes arising from these Terms or the App should be resolved through [arbitration/mediation/courts - to be specified based on your preference].
+Any disputes arising from these Terms or the App should be resolved through binding arbitration or the courts having jurisdiction.
 
 ## 14. Changes to Terms
 
@@ -261,24 +197,24 @@ We reserve the right to modify these Terms at any time. Changes will be effectiv
 
 If you have questions about these Terms:
 
-**Email:** [Your contact email - to be added when hosted]
+**Email:** genesis_app@outlook.com
 
 ---
 
 ## Important Reminders
 
+✅ **Genesis is 100% FREE - all features, forever**  
 ✅ **This is a lifestyle tracking tool, NOT medical advice**  
-✅ **Always consult healthcare professionals for medical decisions**  
+✅ **Always consult healthcare professionals for medical and addiction treatment**  
 ✅ **In emergencies, call 911 or your local emergency number**  
-✅ **You own and control all your data**  
-✅ **14-day free trial, then $4.99/month subscription**  
-✅ **Cancel anytime through Google Play Store**  
-✅ **All billing managed by Google Play**  
+✅ **You own and control all your data - it stays on YOUR phone**  
+✅ **No accounts, no cloud, no tracking**  
 ✅ **Use the App responsibly and at your own risk**  
 
 ---
 
-**BY USING SAPP, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE.**
+**BY USING GENESIS, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE.**
 
-*Effective Date: November 2025*
+*Effective Date: December 2025*
 
+**Your journey, your data, your rules.**

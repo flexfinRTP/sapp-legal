@@ -3,124 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - SApp</title>
+    <title>Privacy Policy - Genesis - Sober & Free</title>
     <style>
+        :root {
+            --primary: #0f0f0f;
+            --accent: #22c55e;
+            --accent-dark: #16a34a;
+            --text: #e5e5e5;
+            --text-muted: #a3a3a3;
+            --surface: #171717;
+            --surface-elevated: #262626;
+            --border: #404040;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            color: #333;
-            background: #f5f5f5;
+            color: var(--text);
+            background: linear-gradient(135deg, #0a0a0a 0%, #171717 50%, #0f0f0f 100%);
+            min-height: 100vh;
         }
+        
         .container {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: var(--surface);
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--border);
         }
-        h1, h2, h3 { color: #2c5f2d; }
+        
+        h1, h2, h3 { 
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
         h1 { 
-            border-bottom: 3px solid #2c5f2d; 
+            border-bottom: 3px solid var(--accent); 
             padding-bottom: 15px;
             margin-bottom: 10px;
+            font-size: 2.2em;
         }
+        
         h2 { 
-            margin-top: 40px;
+            margin-top: 45px;
             margin-bottom: 15px;
             font-size: 1.5em;
         }
+        
         h3 {
             margin-top: 25px;
             margin-bottom: 10px;
             font-size: 1.2em;
+            color: var(--text);
         }
+        
+        p {
+            color: var(--text-muted);
+        }
+        
         ul { 
             margin-left: 20px;
             margin-bottom: 20px;
         }
+        
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            color: var(--text-muted);
         }
+        
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        a:hover {
+            color: var(--accent-dark);
+            text-decoration: underline;
+        }
+        
         .highlight {
-            background: #e8f5e9;
-            padding: 25px;
-            border-left: 5px solid #2c5f2d;
-            margin: 30px 0;
-            border-radius: 5px;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 163, 74, 0.05) 100%);
+            padding: 30px;
+            border-left: 4px solid var(--accent);
+            margin: 35px 0;
+            border-radius: 0 12px 12px 0;
         }
+        
         .highlight h2 {
             margin-top: 0;
-            color: #2c5f2d;
+            color: var(--accent);
         }
-        .highlight strong {
-            color: #1e4620;
+        
+        .highlight p {
+            color: var(--text);
         }
+        
         .back-link {
-            display: inline-block;
-            margin-bottom: 30px;
-            color: #2c5f2d;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 35px;
+            color: var(--accent);
             text-decoration: none;
             font-weight: 500;
-            padding: 10px 20px;
-            background: #e8f5e9;
-            border-radius: 5px;
+            padding: 12px 24px;
+            background: var(--surface-elevated);
+            border-radius: 8px;
+            border: 1px solid var(--border);
             transition: all 0.3s ease;
         }
+        
         .back-link:hover { 
-            background: #c8e6c9;
+            background: var(--accent);
+            color: var(--primary);
             transform: translateX(-5px);
+            text-decoration: none;
         }
+        
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
+        
         .checkmark {
-            color: #2c5f2d;
+            color: var(--accent);
             font-weight: bold;
         }
+        
         .crossmark {
-            color: #c62828;
+            color: #ef4444;
             font-weight: bold;
         }
+        
         .summary-box {
-            background: #f1f8e9;
-            border: 2px solid #2c5f2d;
-            padding: 25px;
-            border-radius: 8px;
-            margin: 30px 0;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(34, 197, 94, 0.05) 100%);
+            border: 2px solid var(--accent);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
         }
+        
         .summary-box h2 {
             margin-top: 0;
         }
+        
+        .free-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+        
+        code {
+            background: var(--surface-elevated);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            color: var(--accent);
+            border: 1px solid var(--border);
+        }
+        
         footer {
             margin-top: 60px;
             padding-top: 30px;
-            border-top: 2px solid #ddd;
+            border-top: 1px solid var(--border);
             text-align: center;
-            color: #666;
+            color: var(--text-muted);
         }
+        
+        footer hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 20px 0;
+        }
+        
+        strong {
+            color: var(--text);
+        }
+        
         @media (max-width: 600px) {
             .container {
-                padding: 20px;
+                padding: 25px;
             }
             body {
                 padding: 10px;
+            }
+            h1 {
+                font-size: 1.6em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="back-link">← Back to Legal Documents</a>
+        <a href="index.html" class="back-link">← Back to Home</a>
         
-        <h1>Privacy Policy for SApp</h1>
-        <p><strong>Last Updated: November 2025</strong></p>
+        <h1>Privacy Policy <span class="free-badge">100% FREE</span></h1>
+        <p><strong>Genesis - Sober & Free</strong> | <strong>Last Updated: December 2025</strong></p>
         
         <div class="highlight">
-            <h2>Our Core Privacy Principle</h2>
+            <h2>🔒 Our Core Privacy Principle</h2>
             <p><strong>We Do Not Collect Your Data. Period.</strong></p>
-            <p>SApp is built with privacy as its foundation. Unlike most apps, we:</p>
+            <p>Genesis is built with privacy as its foundation. Unlike most apps, we:</p>
             <ul>
                 <li><span class="crossmark">❌</span> <strong>DO NOT</strong> collect any personal information</li>
                 <li><span class="crossmark">❌</span> <strong>DO NOT</strong> track your usage or behavior</li>
@@ -133,7 +228,8 @@
         
         <div class="section">
             <h2>Overview</h2>
-            <p>SApp ("we," "our," or "the app") is a privacy-first lifestyle tracking application designed to help users monitor their personal wellness goals, habits, and health metrics. This Privacy Policy explains our commitment to protecting your privacy.</p>
+            <p>Genesis - Sober & Free ("we," "our," or "the app") is a privacy-first recovery and wellness tracking application designed to help users track their sobriety, monitor health metrics, and build better habits. This Privacy Policy explains our commitment to protecting your privacy.</p>
+            <p><strong>Genesis is 100% free</strong> with all features unlocked. No ads, no subscriptions, no catch.</p>
         </div>
 
         <div class="section">
@@ -141,7 +237,7 @@
             
             <h3>Local Storage Only</h3>
             <ul>
-                <li><strong>All data remains on your device</strong> - Your habits, health metrics, goals, and progress are stored exclusively in your device's local storage</li>
+                <li><strong>All data remains on your device</strong> - Your recovery progress, health metrics, goals, and personal data are stored exclusively in your device's local storage</li>
                 <li><strong>No cloud backup</strong> - We do not maintain servers or cloud storage for your data</li>
                 <li><strong>No synchronization</strong> - Data is not synced to any external service</li>
                 <li><strong>Complete control</strong> - You can delete all your data at any time from the app's settings</li>
@@ -149,10 +245,11 @@
 
             <h3>Data You Can Track (All Stored Locally)</h3>
             <ul>
-                <li>Habit tracking and progress</li>
+                <li>Sobriety/clean time streaks for 17 addiction types</li>
+                <li>Craving logs and HALT trigger analysis</li>
                 <li>Weight and BMI measurements</li>
-                <li>Exercise plans and schedules</li>
-                <li>Personal goals and milestones</li>
+                <li>Exercise plans and workout schedules</li>
+                <li>Personal goals and recovery milestones</li>
                 <li>Notes and timestamps</li>
             </ul>
         </div>
@@ -161,7 +258,7 @@
             <h2>Permissions</h2>
             
             <h3>What We DON'T Request</h3>
-            <p>SApp explicitly <strong>blocks</strong> the following permissions:</p>
+            <p>Genesis explicitly <strong>blocks</strong> the following permissions:</p>
             <ul>
                 <li><span class="crossmark">❌</span> Camera access</li>
                 <li><span class="crossmark">❌</span> Microphone access</li>
@@ -174,7 +271,7 @@
             <h3>What We DO Use</h3>
             <ul>
                 <li><span class="checkmark">✅</span> <strong>File Storage</strong> - Only to allow you to export/import your own data as backup files</li>
-                <li><span class="checkmark">✅</span> <strong>File Sharing</strong> - Only to let you save backup files to your chosen location</li>
+                <li><span class="checkmark">✅</span> <strong>File Sharing</strong> - Only to let you save backup files or share achievement cards</li>
             </ul>
         </div>
 
@@ -183,10 +280,10 @@
             
             <h3>Your Data, Your Control</h3>
             <ul>
-                <li>You can export all your data at any time as a <code>.sra</code> (SApp Archive) file</li>
+                <li>You can export all your data at any time as an encrypted backup file</li>
                 <li>Exports are encrypted and obfuscated for your security</li>
                 <li>You control where backup files are saved</li>
-                <li>Imports allow you to restore your data if needed</li>
+                <li>Imports allow you to restore your data or transfer to a new device</li>
                 <li>Export/import works entirely offline</li>
             </ul>
 
@@ -199,54 +296,32 @@
         </div>
 
         <div class="section">
-            <h2>Payment Processing</h2>
+            <h2>100% Free - No Payment Processing</h2>
             
-            <h3>Subscription Information</h3>
-            <p>SApp offers a subscription service:</p>
+            <p><strong>Genesis is completely free.</strong> There are:</p>
             <ul>
-                <li><strong>Free Trial:</strong> 14 days (no payment required to start)</li>
-                <li><strong>Subscription Price:</strong> $4.99/month (USD)</li>
-                <li><strong>Billing:</strong> Managed through Google Play Store</li>
+                <li><span class="crossmark">❌</span> No subscriptions</li>
+                <li><span class="crossmark">❌</span> No in-app purchases</li>
+                <li><span class="crossmark">❌</span> No premium tiers</li>
+                <li><span class="crossmark">❌</span> No payment processing</li>
+                <li><span class="crossmark">❌</span> No ads - ever</li>
             </ul>
-
-            <h3>Payment Data</h3>
-            <ul>
-                <li><strong>We DO NOT process payments directly</strong> - All subscription billing is handled exclusively by Google Play Store</li>
-                <li><strong>We DO NOT collect payment information</strong> - Google manages all payment data according to their privacy policy</li>
-                <li><strong>We DO NOT store credit card information</strong> - Payment details remain with Google</li>
-                <li><strong>Subscription management</strong> occurs through your Google Play account settings</li>
-            </ul>
-
-            <h3>What We Know About Your Subscription</h3>
-            <p>We only receive:</p>
-            <ul>
-                <li>Subscription status (active/inactive/trial)</li>
-                <li>Subscription start/end dates</li>
-            </ul>
-            <p><strong>We DO NOT receive:</strong> Credit card numbers, billing addresses, or personal financial information</p>
+            <p>All features are unlocked from day one. Recovery shouldn't have a paywall.</p>
         </div>
 
         <div class="section">
             <h2>Third-Party Services</h2>
             
-            <h3>Payment Processor (Google Play)</h3>
-            <ul>
-                <li><strong>Google Play Store</strong> processes all payments and subscriptions</li>
-                <li>Subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a></li>
-                <li>Manage subscriptions in your Google Play account</li>
-                <li>Cancel anytime through Google Play Store</li>
-            </ul>
-
             <h3>External Resources Only</h3>
-            <p>SApp provides links to external resources for:</p>
+            <p>Genesis provides links to external resources for:</p>
             <ul>
                 <li>Emergency hotlines and crisis support services</li>
-                <li>Community support groups and meetings</li>
-                <li>Educational health information</li>
+                <li>AA/NA meeting finder resources</li>
+                <li>Online support community links</li>
             </ul>
             <p><strong>Important:</strong> When you click these links or dial phone numbers, you leave the app and interact directly with those third-party services. We have no control over and are not responsible for the privacy practices of external services.</p>
 
-            <h3>No Third-Party SDKs (Except Required Store Services)</h3>
+            <h3>No Third-Party SDKs</h3>
             <p>We do not integrate:</p>
             <ul>
                 <li><span class="crossmark">❌</span> Advertising networks</li>
@@ -255,32 +330,28 @@
                 <li><span class="crossmark">❌</span> Marketing tools</li>
                 <li><span class="crossmark">❌</span> Data brokers</li>
             </ul>
-            <p>We DO use:</p>
-            <ul>
-                <li><span class="checkmark">✅</span> Google Play Billing (required for subscription processing)</li>
-            </ul>
         </div>
 
         <div class="section">
             <h2>Not a Medical Device or Service</h2>
             
             <h3>Lifestyle Tool Only</h3>
-            <p>SApp is a <strong>personal lifestyle tracking tool</strong> and is <strong>NOT</strong>:</p>
+            <p>Genesis is a <strong>personal lifestyle tracking tool</strong> and is <strong>NOT</strong>:</p>
             <ul>
                 <li><span class="crossmark">❌</span> A medical device</li>
                 <li><span class="crossmark">❌</span> Medical advice or treatment</li>
-                <li><span class="crossmark">❌</span> A substitute for professional healthcare</li>
+                <li><span class="crossmark">❌</span> A substitute for professional healthcare or addiction treatment</li>
                 <li><span class="crossmark">❌</span> Intended to diagnose, cure, or prevent any disease</li>
                 <li><span class="crossmark">❌</span> A crisis intervention service</li>
             </ul>
 
             <h3>Disclaimer</h3>
-            <p>The information and tools provided in SApp are for general informational and personal tracking purposes only. Always seek the advice of qualified healthcare professionals for medical concerns. If you are experiencing a medical emergency or mental health crisis, contact emergency services immediately.</p>
+            <p>The information and tools provided in Genesis are for general informational and personal tracking purposes only. Always seek the advice of qualified healthcare professionals for addiction treatment and mental health concerns. If you are experiencing a medical emergency or mental health crisis, contact emergency services immediately.</p>
         </div>
 
         <div class="section">
             <h2>Children's Privacy</h2>
-            <p>SApp is intended for users aged 13 and older. We do not knowingly collect information from children under 13. Since we don't collect any data, this is not an issue, but parents should supervise their children's app usage.</p>
+            <p>Genesis is intended for users aged 13 and older. We do not knowingly collect information from children under 13. Since we don't collect any data, this is inherently satisfied, but parents should supervise their children's app usage.</p>
         </div>
 
         <div class="section">
@@ -315,9 +386,400 @@
             <p>Your data never leaves your device, so you maintain complete control at all times.</p>
         </div>
 
-        <div class="section">
+        <div class="section"># Google Play Store Metadata for Genesis - Sober & Free
+
+            ## App Name (30 characters max)
+            ```
+            Genesis - Sober & Free
+            ```
+            **22 characters** ✅
+            
+            ---
+            
+            ## Short Description (80 characters max)
+            **Current: 74 characters**
+            ```
+            Track your clean days. No account, no cloud, no BS. Private & free.
+            ```
+            
+            **Alternative Options:**
+            ```
+            Your clean time. Your data. Your phone. Nobody else's business. (64)
+            Day counter for people who mean it. No tracking. No ads. No excuses. (68)
+            No accounts. No subscriptions. No data harvesting. Just your clean time. (72)
+            ```
+            
+            ---
+            
+            ## Full Description (4000 characters max)
+            **Current: ~2,950 characters**
+            
+            ```
+            🔒 YOUR RECOVERY. YOUR RULES.
+            
+            Finally, a day counter that respects your privacy. No account, no cloud, no corporate data harvesting. Your clean time stays on YOUR phone. Period.
+            
+            Genesis is built for people who mean it. Whether you're counting days sober, tracking clean time, or building better habits - this is your private companion. No judgment, no nonsense, just you and your count.
+            
+            💪 WHAT YOU GET (100% FREE)
+            
+            DAY COUNTER & RECOVERY TRACKING
+            • Track 17 addiction types: alcohol, cannabis, nicotine, vaping, opioids, cocaine, gambling, pornography, social media, video games, binge eating, sugar, shopping, screen time, caffeine, prescription drugs, and custom
+            • Live streak counter - days, hours, minutes, seconds
+            • 15-minute craving timer with urge surfing technique
+            • Log setbacks without shame - every attempt counts
+            • Recovery milestones based on AA/NA chip traditions (24hr, 72hr, 1 week, 30/60/90 days, 1 year+)
+            • HALT trigger analysis (Hungry, Angry, Lonely, Tired)
+            • Resilience metrics and urge surfing success rate
+            
+            ⚖️ WEIGHT & BMI TRACKING
+            • Log weight with trend visualization over time
+            • BMI calculator with health category indicators
+            • Set weight and BMI goals with progress tracking
+            • See how close you are to your target
+            • Historical charts show your journey
+            
+            🏋️ FULL EXERCISE PLANNER (50+ EXERCISES)
+            • Bodyweight: push-ups, squats, lunges, planks, burpees, and more
+            • Strength: dumbbell rows, bench press, deadlifts
+            • Cardio: mountain climbers, high knees, jump squats
+            • Yoga & Flexibility: downward dog, child's pose, stretches
+            • Drag-and-drop exercise calendar
+            • Recurring workout schedules (daily, weekly, biweekly)
+            • Plan your full week in minutes
+            
+            FAITH-BASED MOTIVATION
+            • 400+ motivational messages across 8 traditions
+            • Christianity, Islam, Judaism, Buddhism, Hinduism, Sikhism, Taoism
+            • Secular/universal option for everyone
+            • Messages rotate during craving timer
+            
+            📤 SHARE YOUR WINS
+            • Shareable achievement cards - beautiful gradient cards to celebrate milestones
+            • Custom emoji and photo options
+            • Show your streak without exposing your data
+            • Share to social media, text, or save to gallery
+            
+            📱 ANDROID HOME SCREEN WIDGET
+            • Day counter widget right on your home screen
+            • See your streak without opening the app
+            • One tap to access craving timer
+            • Auto-updates in real-time
+            
+            💾 YOUR DATA, YOUR CONTROL
+            • Export all data as encrypted backup file
+            • Import to restore or transfer devices
+            • Selective data restore options
+            • One-tap data reset when needed
+            
+            🎨 MAKE IT YOURS
+            • 26 dark themes to match your style
+            • Customizable from classic green to rose to navy
+            
+            🔐 WHY GENESIS IS DIFFERENT
+            
+            Other apps want your data. We don't.
+            
+            ✗ No account required - start tracking in 30 seconds
+            ✗ No cloud storage - nothing leaves your device
+            ✗ No analytics or tracking - we don't spy on you
+            ✗ No ads - ever
+            ✗ No subscriptions - all features free, forever
+            ✗ No fine print - what you see is what you get
+            
+            Your recovery journey is deeply personal. It should stay that way.
+            
+            📊 RECOVERY ANALYTICS THAT MATTER
+            
+            We don't track vanity metrics. We track what helps:
+            • How many cravings did you resist?
+            • Are your streaks getting longer?
+            • What times and days are most dangerous for you?
+            • What triggers show up in your notes?
+            • Personalized affirmations based on YOUR data
+            
+            🆘 EMERGENCY RESOURCES
+            
+            When you need help beyond an app:
+            • Global crisis hotline numbers
+            • AA/NA meeting finder resources
+            • Online support community links
+            • Quick access from any screen
+            
+            ⚠️ IMPORTANT DISCLAIMER
+            
+            Genesis is a lifestyle tracking tool for personal use. This app does NOT provide medical advice, diagnosis, or treatment. It is NOT a substitute for professional addiction treatment or mental health care. Always consult qualified healthcare providers for medical decisions. In emergencies, call 911 or your local emergency number immediately.
+            
+            🎯 WHO IS THIS FOR?
+            
+            • People in recovery counting clean time
+            • Anyone building better habits privately
+            • Privacy advocates who refuse data harvesting
+            • Health-conscious individuals tracking weight and fitness
+            • People who want a simple, no-BS day counter
+            
+            📱 REQUIREMENTS
+            
+            • Android 7.0 (API 24) or higher
+            • 100MB free storage
+            • No internet required (works 100% offline)
+            
+            💯 100% FREE. ALL FEATURES. NO CATCH.
+            
+            No trial periods. No premium upgrades. No "unlock for $4.99." Everything is free because recovery shouldn't have a paywall.
+            
+            ---
+            
+            Privacy Policy: https://flexfinrtp.github.io/sapp-legal/privacy-policy.html
+            Terms of Service: https://flexfinrtp.github.io/sapp-legal/terms-of-service.html
+            Support: genesis_app@outlook.com
+            
+            Genesis - Your journey, your data, your rules.
+            ```
+            
+            ---
+            
+            ## App Category
+            
+            **Primary Category:** Health & Fitness
+            
+            **Tags:**
+            - Sober
+            - Sobriety
+            - Recovery
+            - Day Counter
+            - Addiction
+            - Habit Tracker
+            - Health
+            - Fitness
+            - Private
+            
+            ---
+            
+            ## Keywords for ASO (App Store Optimization)
+            
+            **Primary Keywords (High Priority - Include in Title/Short Desc):**
+            - sober
+            - sobriety tracker
+            - day counter
+            - sober counter
+            - days sober
+            - quit drinking
+            - addiction recovery
+            
+            **Secondary Keywords (Include in Long Desc):**
+            - addiction tracker
+            - recovery app
+            - clean time
+            - quit alcohol
+            - sober app
+            - sobriety clock
+            - habit tracker
+            - streak tracker
+            - craving timer
+            - urge surfing
+            - share achievement
+            - sobriety milestone
+            - recovery analytics
+            - progress tracker
+            
+            **Feature-Specific Keywords:**
+            - weight tracker
+            - BMI calculator
+            - goal tracker
+            - weight goal
+            - home screen widget
+            - android widget
+            - sober widget
+            - workout calendar
+            - workout planner
+            - exercise planner
+            - fitness tracker
+            - data backup
+            - export data
+            
+            **Faith-Based Keywords:**
+            - christian recovery
+            - faith recovery
+            - spiritual recovery
+            - AA recovery
+            - NA recovery
+            
+            **Long-tail Keywords (Lower Competition):**
+            - private sobriety app
+            - offline sober tracker
+            - no account sobriety app
+            - anonymous recovery tracker
+            - sober day counter free
+            - alcohol addiction tracker free
+            - free sobriety app no ads
+            - AA tracker
+            - NA tracker
+            - share sobriety milestone
+            - recovery widget android
+            - sober streak widget
+            
+            ---
+            
+            ## Target Audience
+            
+            **Primary Demographics:**
+            - **Age:** 18-55 years old
+            - **Gender:** All genders
+            - **Geography:** Global (English-speaking markets initially)
+            
+            **User Personas:**
+            
+            1. **Serious Recovery (50%)**
+               - Actively counting clean time
+               - AA/NA community members
+               - Want privacy for their recovery data
+               - Appreciate faith-based messaging options
+            
+            2. **Privacy-Conscious Users (25%)**
+               - Refuse apps that harvest data
+               - Want offline-first functionality
+               - No account / no cloud requirement
+            
+            3. **Habit Breakers (15%)**
+               - Quitting social media, gaming, porn, etc.
+               - Want day counter without "recovery" stigma
+               - Appreciate the discreet app name
+            
+            4. **Health Trackers (10%)**
+               - Weight and BMI monitoring
+               - Exercise planning
+               - Want an all-in-one private tracker
+            
+            ---
+            
+            ## Content Rating Questionnaire Answers
+            
+            **Age Rating:** 12+ (Teen) or 17+ (Mature)
+            
+            ### Drugs, Alcohol & Tobacco
+            - **Drug references:** Yes (educational/recovery context)
+            - **Alcohol references:** Yes (tracking abstinence context)
+            - **Tobacco references:** Yes (tracking abstinence context)
+            
+            **Explanation:** App helps users track sobriety from substances as part of recovery/wellness journey. References are in context of AVOIDING use, not promotion.
+            
+            ### Violence & Scary Content
+            - All: No
+            
+            ### Sexual Content
+            - All: No
+            
+            ### Profanity
+            - All: No
+            
+            ### Social Features
+            - **User interaction:** No
+            - **Shares location:** No
+            - **Shares personal info:** No
+            - **In-app purchases:** No
+            
+            **Final Rating:** Likely **12+ (Teen)** or **17+ (Mature)** depending on regional review
+            
+            ---
+            
+            ## Data Safety Form Answers
+            
+            **Does your app collect or share user data?**
+            → **NO**
+            
+            **Data types collected:**
+            → **None**
+            
+            **Data shared with third parties:**
+            → **None**
+            
+            **Security practices:**
+            - All data stored locally on device only
+            - No servers, no cloud, no transmission
+            - User controls all data via export/delete
+            
+            **Data deletion:**
+            → User can delete all data anytime via Settings
+            
+            ---
+            
+            ## What's New (Release Notes Template)
+            
+            ```
+            Version 0.8.0 - Genesis Rebrand 🔥
+            
+            ✨ NEW IDENTITY
+            • Rebranded to "Genesis - Sober & Free"
+            • New hardcore, no-BS approach to recovery tracking
+            • Same great features, better positioning
+            
+            🆓 100% FREE - ALWAYS
+            • All features unlocked for everyone
+            • Unlimited habits, goals, exercises, themes
+            • Shareable achievement cards
+            • Android home screen widget
+            • Data export/import
+            • No ads, no subscriptions, no catch
+            
+            🔒 YOUR DATA STAYS YOURS
+            • No account required
+            • No cloud storage
+            • No tracking or analytics
+            • Works 100% offline
+            
+            💪 FULL FEATURE SET
+            • 17 addiction types to track
+            • 50+ exercises
+            • 26 dark themes
+            • 400+ faith-based motivational messages
+            • Recovery analytics (HALT triggers, resilience metrics)
+            • AA/NA-style milestones
+            
+            Your journey. Your data. Your rules.
+            ```
+            
+            ---
+            
+            ## Promotional Assets Checklist
+            
+            ### Required Graphics
+            - [ ] App Icon (512x512px with transparency)
+            - [ ] Feature Graphic (1024x500px)
+            - [ ] Screenshots (4-8 phone screenshots, 1080x1920 minimum)
+            
+            ### Recommended Screenshots:
+            1. Day counter/streak display
+            2. Habit selection (17 types)
+            3. Craving timer with message
+            4. Recovery analytics
+            5. Exercise calendar
+            6. Theme selection (26 themes)
+            7. Shareable achievement card
+            8. Home screen widget
+            
+            ---
+            
+            ## Competitor Differentiation
+            
+            | Feature | Genesis | I Am Sober | Nomo | Others |
+            |---------|---------|------------|------|--------|
+            | **100% Free** | ✅ All features | ❌ Freemium | ❌ Freemium | ❌ Mixed |
+            | **No Account** | ✅ | ❌ Required | ❌ Required | ❌ Often required |
+            | **No Cloud** | ✅ | ❌ Cloud sync | ❌ Cloud sync | ❌ Usually cloud |
+            | **No Ads** | ✅ | ❌ Has ads | ❌ Has ads | ❌ Usually |
+            | **Faith Options** | ✅ 8 traditions | ❌ Limited | ❌ Limited | ❌ Rare |
+            | **17 Habit Types** | ✅ | ⚠️ Fewer | ⚠️ Fewer | ⚠️ Varies |
+            | **50+ Exercises** | ✅ | ❌ None | ❌ None | ❌ Rare |
+            | **Health Tracking** | ✅ Weight/BMI | ❌ None | ❌ None | ❌ Rare |
+            
+            ---
+            
+            *Last Updated: December 2025*
+            *Version: 0.8.0 (Genesis Rebrand)*
+            
             <h2>International Users</h2>
-            <p>SApp can be used worldwide. Since all data is stored locally on your device:</p>
+            <p>Genesis can be used worldwide. Since all data is stored locally on your device:</p>
             <ul>
                 <li>No data crosses borders</li>
                 <li>No compliance with international data transfer regulations is needed</li>
@@ -327,34 +789,14 @@
 
         <div class="section">
             <h2>Contact Information</h2>
-            <p>If you have questions about this Privacy Policy or SApp's privacy practices:</p>
-            <p><strong>Email:</strong> <a href="mailto:support@sapp.com">support@sapp.com</a></p>
+            <p>If you have questions about this Privacy Policy or Genesis's privacy practices:</p>
+            <p><strong>Email:</strong> <a href="mailto:genesis_app@outlook.com">genesis_app@outlook.com</a></p>
             <p><strong>Response Time:</strong> We aim to respond within 48 hours</p>
         </div>
 
         <div class="section">
             <h2>Transparency Commitment</h2>
             <p>This Privacy Policy is written in plain language because we believe privacy policies should be understandable. Our commitment is simple: <strong>Your data is yours, and yours alone.</strong></p>
-        </div>
-
-        <div class="section">
-            <h2>Subscription & Billing Privacy</h2>
-            
-            <h3>Transparency</h3>
-            <ul>
-                <li>Free 14-day trial to test the app</li>
-                <li>$4.99/month subscription after trial</li>
-                <li>Cancel anytime (no penalties or fees)</li>
-                <li>All billing through Google Play Store only</li>
-                <li>No recurring charges without your consent</li>
-            </ul>
-
-            <h3>Data Related to Subscriptions</h3>
-            <ul>
-                <li>We verify subscription status to enable app features</li>
-                <li>Subscription data is minimal and managed by Google</li>
-                <li>No financial information ever stored on our servers (we don't have servers!)</li>
-            </ul>
         </div>
 
         <div class="summary-box">
@@ -364,13 +806,12 @@
             <ul>
                 <li><span class="checkmark">✅</span> All data stored locally on your device only</li>
                 <li><span class="checkmark">✅</span> Zero data collection or tracking</li>
-                <li><span class="checkmark">✅</span> No internet required for core features</li>
+                <li><span class="checkmark">✅</span> No internet required (works 100% offline)</li>
                 <li><span class="checkmark">✅</span> No third-party analytics or advertising</li>
                 <li><span class="checkmark">✅</span> You control all your data</li>
                 <li><span class="checkmark">✅</span> Export/import for backups (offline)</li>
                 <li><span class="checkmark">✅</span> Delete everything anytime</li>
-                <li><span class="checkmark">✅</span> 14-day free trial, then $4.99/month</li>
-                <li><span class="checkmark">✅</span> Billing through Google Play Store only</li>
+                <li><span class="checkmark">✅</span> <strong>100% FREE - All features, forever</strong></li>
             </ul>
 
             <p><strong>What We DON'T DO:</strong></p>
@@ -378,19 +819,20 @@
                 <li><span class="crossmark">❌</span> No cloud storage</li>
                 <li><span class="crossmark">❌</span> No user accounts</li>
                 <li><span class="crossmark">❌</span> No data sharing</li>
+                <li><span class="crossmark">❌</span> No subscriptions or payments</li>
+                <li><span class="crossmark">❌</span> No ads</li>
                 <li><span class="crossmark">❌</span> Not a medical device</li>
-                <li><span class="crossmark">❌</span> We don't process or store payment info</li>
             </ul>
 
-            <p style="text-align: center; font-size: 1.2em; margin-top: 20px;"><strong>Your privacy is not a feature—it's our foundation.</strong></p>
+            <p style="text-align: center; font-size: 1.2em; margin-top: 25px;"><strong>Your privacy is not a feature—it's our foundation.</strong></p>
         </div>
 
         <footer>
-            <p><em>This privacy policy is effective as of November 2025 and applies to all versions of SApp.</em></p>
-            <hr style="margin: 20px 0;">
-            <p>&copy; 2025 SApp. All rights reserved.</p>
+            <p><em>This privacy policy is effective as of December 2025 and applies to all versions of Genesis - Sober & Free.</em></p>
+            <hr>
+            <p>© 2025 Genesis - Sober & Free. All rights reserved.</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">Your journey, your data, your rules.</p>
         </footer>
     </div>
 </body>
 </html>
-

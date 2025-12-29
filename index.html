@@ -3,106 +3,650 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SApp - Legal Documents</title>
+    <title>Genesis - Sober & Free | Your Recovery, Your Rules</title>
+    <meta name="description" content="Track your clean days. No account, no cloud, no BS. Private & free. Genesis is the privacy-first sobriety and recovery tracker for people who mean it.">
+    <meta name="keywords" content="sober, sobriety tracker, day counter, addiction recovery, clean time, quit drinking, quit alcohol, AA tracker, NA tracker, private sobriety app">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #0a0a0a;
+            --accent: #22c55e;
+            --accent-glow: rgba(34, 197, 94, 0.4);
+            --accent-dark: #16a34a;
+            --text: #fafafa;
+            --text-muted: #a3a3a3;
+            --surface: #141414;
+            --surface-elevated: #1f1f1f;
+            --border: #2a2a2a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--primary);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        /* Animated background */
+        .bg-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse 80% 50% at 50% -20%, rgba(34, 197, 94, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 40% at 100% 100%, rgba(34, 197, 94, 0.08) 0%, transparent 50%),
+                linear-gradient(180deg, #0a0a0a 0%, #0f0f0f 50%, #0a0a0a 100%);
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Header */
+        header {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text);
+        }
+        
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 0 30px var(--accent-glow);
+        }
+        
+        .logo-text {
+            font-size: 1.5em;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        
+        .logo-tagline {
+            font-size: 0.75em;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+        
+        /* Hero */
+        .hero {
+            padding: 100px 0 80px;
+            text-align: center;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--surface-elevated);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85em;
+            margin-bottom: 32px;
+            color: var(--text-muted);
+        }
+        
+        .hero-badge span {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        h1 {
+            font-size: clamp(2.5em, 8vw, 4.5em);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -0.03em;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--accent) 0%, #4ade80 50%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1em, 3vw, 1.4em);
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 48px;
             line-height: 1.6;
+        }
+        
+        /* CTA Buttons */
+        .cta-group {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-family: inherit;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+            color: #000;
+            box-shadow: 0 0 40px var(--accent-glow);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 50px var(--accent-glow);
+        }
+        
+        .btn-secondary {
+            background: var(--surface-elevated);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--border);
+            transform: translateY(-2px);
+        }
+        
+        /* Google Play badge styling */
+        .play-badge {
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+        
+        .play-badge:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Features Grid */
+        .features {
+            padding: 80px 0;
+        }
+        
+        .section-label {
+            text-align: center;
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9em;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: clamp(1.8em, 4vw, 2.5em);
+            margin-bottom: 64px;
+            font-weight: 600;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        
+        .feature-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(34, 197, 94, 0.05) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .feature-card p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+        
+        /* Privacy Section */
+        .privacy-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .privacy-box {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.02) 100%);
+            border: 2px solid var(--accent);
+            border-radius: 24px;
+            padding: 60px 40px;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background: #f5f5f5;
         }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        
+        .privacy-box h2 {
+            font-size: clamp(1.8em, 4vw, 2.5em);
+            margin-bottom: 24px;
         }
-        h1 { 
-            color: #2c5f2d; 
-            margin-bottom: 10px;
+        
+        .privacy-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            text-align: left;
+            margin-top: 32px;
         }
-        .subtitle {
-            color: #666;
-            font-size: 1.1em;
-            margin-bottom: 30px;
-        }
-        .nav { 
-            margin: 40px 0; 
+        
+        .privacy-item {
             display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .nav a {
-            display: inline-block;
-            padding: 15px 30px;
-            background: #2c5f2d;
-            color: white;
-            text-decoration: none;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: rgba(0, 0, 0, 0.3);
             border-radius: 8px;
+        }
+        
+        .privacy-item .icon {
+            color: #ef4444;
+            font-size: 1.2em;
+        }
+        
+        .privacy-item span {
+            color: var(--text-muted);
+            font-size: 0.95em;
+        }
+        
+        /* Legal Links Section */
+        .legal-section {
+            padding: 80px 0;
+        }
+        
+        .legal-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .legal-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            text-decoration: none;
+            color: var(--text);
             transition: all 0.3s ease;
-            font-weight: 500;
-            flex: 1;
             text-align: center;
-            min-width: 200px;
         }
-        .nav a:hover { 
-            background: #1e4620;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(44, 95, 45, 0.3);
+        
+        .legal-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
-        .highlight {
-            background: #e8f5e9;
-            padding: 20px;
-            border-left: 4px solid #2c5f2d;
-            margin: 30px 0;
-            border-radius: 5px;
+        
+        .legal-card .icon {
+            font-size: 2.5em;
+            margin-bottom: 16px;
         }
-        .highlight strong {
-            color: #2c5f2d;
+        
+        .legal-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 8px;
+            font-weight: 600;
         }
-        footer {
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            text-align: center;
-            color: #666;
+        
+        .legal-card p {
+            color: var(--text-muted);
             font-size: 0.9em;
         }
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
+        
+        /* Footer */
+        footer {
+            padding: 60px 0 40px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+        
+        .footer-tagline {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .footer-subtitle {
+            color: var(--text-muted);
+            margin-bottom: 32px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: color 0.2s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        .footer-copyright {
+            color: var(--text-muted);
+            font-size: 0.85em;
+        }
+        
+        .footer-copyright a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        /* Stats Row */
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+            padding: 40px 0;
+            margin-bottom: 40px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--accent);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9em;
+            margin-top: 4px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0 40px;
             }
-            .nav {
-                flex-direction: column;
+            
+            .stats-row {
+                gap: 24px;
             }
-            .nav a {
-                width: 100%;
+            
+            .stat-value {
+                font-size: 2em;
+            }
+            
+            .privacy-box {
+                padding: 40px 24px;
+            }
+            
+            .header-content {
+                justify-content: center;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🌱 SApp - Legal Documents</h1>
-        <p class="subtitle">Private wellness tracker with 100% local data storage. Your data never leaves your device.</p>
-        
-        <div class="highlight">
-            <strong>Privacy First:</strong> We don't collect your data. Period. All tracking happens locally on your device with zero cloud storage, zero tracking, and complete privacy control.
+    <div class="bg-gradient"></div>
+    
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <div class="logo-icon">🔥</div>
+                    <div>
+                        <div class="logo-text">Genesis</div>
+                        <div class="logo-tagline">Sober & Free</div>
+                    </div>
+                </a>
+            </div>
         </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-badge">
+                    🆓 <span>100% FREE</span> — All features, forever
+                </div>
+                
+                <h1>
+                    Your Recovery.<br>
+                    <span class="gradient-text">Your Rules.</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Track your clean days. No account, no cloud, no BS. 
+                    Private & free. Built for people who mean it.
+                </p>
+                
+                <div class="cta-group">
+                    <a href="https://play.google.com/store/apps/details?id=com.genesis.sober" class="btn btn-primary" target="_blank" rel="noopener">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+                        Get on Google Play
+                    </a>
+                </div>
+                
+                <div class="stats-row">
+                    <div class="stat">
+                        <div class="stat-value">17</div>
+                        <div class="stat-label">Addiction Types</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">50+</div>
+                        <div class="stat-label">Exercises</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">26</div>
+                        <div class="stat-label">Dark Themes</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">400+</div>
+                        <div class="stat-label">Motivational Messages</div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        <div class="nav">
-            <a href="privacy-policy.html">📄 Privacy Policy</a>
-            <a href="terms-of-service.html">📜 Terms of Service</a>
+        <section class="features">
+            <div class="container">
+                <div class="section-label">Features</div>
+                <h2 class="section-title">Everything you need. Nothing you don't.</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Day Counter & Recovery Tracking</h3>
+                        <p>Live streak counter with days, hours, minutes. Track 17 addiction types including alcohol, cannabis, opioids, gambling, and more.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🔥</div>
+                        <h3>15-Minute Craving Timer</h3>
+                        <p>Evidence-based urge surfing technique. Rotating faith-based motivational messages from 8 traditions to get you through.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>Recovery Analytics</h3>
+                        <p>HALT trigger analysis (Hungry, Angry, Lonely, Tired). Resilience metrics. See your patterns and celebrate your progress.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">⚖️</div>
+                        <h3>Weight & BMI Tracking</h3>
+                        <p>Log weight with trend visualization. BMI calculator with health categories. Set goals and track your journey.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🏋️</div>
+                        <h3>Full Exercise Planner</h3>
+                        <p>50+ exercises: bodyweight, strength, cardio, yoga. Drag-and-drop calendar. Recurring workout schedules.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📤</div>
+                        <h3>Share Your Wins</h3>
+                        <p>Beautiful shareable achievement cards for milestones. Show your streak without exposing your data. Android widget included.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="privacy-section">
+            <div class="container">
+                <div class="privacy-box">
+                    <div class="section-label">Privacy First</div>
+                    <h2>Other apps want your data.<br>We don't.</h2>
+                    <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto;">
+                        Your recovery journey is deeply personal. It should stay that way. 
+                        All data stays on YOUR phone. Period.
+                    </p>
+                    
+                    <div class="privacy-list">
+                        <div class="privacy-item">
+                            <span class="icon">❌</span>
+                            <span>No account required</span>
+                        </div>
+                        <div class="privacy-item">
+                            <span class="icon">❌</span>
+                            <span>No cloud storage</span>
+                        </div>
+                        <div class="privacy-item">
+                            <span class="icon">❌</span>
+                            <span>No analytics or tracking</span>
+                        </div>
+                        <div class="privacy-item">
+                            <span class="icon">❌</span>
+                            <span>No ads - ever</span>
+                        </div>
+                        <div class="privacy-item">
+                            <span class="icon">❌</span>
+                            <span>No subscriptions</span>
+                        </div>
+                        <div class="privacy-item">
+                            <span class="icon">❌</span>
+                            <span>No fine print</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="legal-section">
+            <div class="container">
+                <div class="section-label">Legal</div>
+                <h2 class="section-title">Transparency is everything</h2>
+                
+                <div class="legal-cards">
+                    <a href="privacy-policy.html" class="legal-card">
+                        <div class="icon">🔒</div>
+                        <h3>Privacy Policy</h3>
+                        <p>How we protect your data (spoiler: we don't collect it)</p>
+                    </a>
+                    
+                    <a href="terms-of-service.html" class="legal-card">
+                        <div class="icon">📜</div>
+                        <h3>Terms of Service</h3>
+                        <p>The rules of the road, written in plain English</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-tagline">Genesis - Sober & Free</div>
+            <p class="footer-subtitle">Your journey, your data, your rules.</p>
+            
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="mailto:genesis_app@outlook.com">Contact Support</a>
+            </div>
+            
+            <p class="footer-copyright">
+                © 2025 Genesis - Sober & Free. All rights reserved.<br>
+                Built for people who mean it.
+            </p>
         </div>
-        
-        <footer>
-            <p><strong>Last Updated:</strong> November 2025</p>
-            <p>&copy; 2025 SApp. All rights reserved.</p>
-        </footer>
-    </div>
+    </footer>
 </body>
 </html>
-
