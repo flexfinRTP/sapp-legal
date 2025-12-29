@@ -67,46 +67,6 @@
             padding: 0 24px;
         }
         
-        /* Header */
-        header {
-            padding: 24px 0;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-            color: var(--text);
-        }
-        
-        .logo-icon {
-            width: 48px;
-            height: 48px;
-            object-fit: contain;
-        }
-        
-        .logo-text {
-            font-size: 1.5em;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-        }
-        
-        .logo-tagline {
-            font-size: 0.75em;
-            color: var(--text-muted);
-            font-weight: 400;
-        }
-        
         /* Hero */
         .hero {
             padding: 80px 0 60px;
@@ -114,10 +74,10 @@
         }
         
         .hero-logo {
+            display: block;
             width: 200px;
             height: auto;
-            margin-bottom: 32px;
-            filter: drop-shadow(0 0 40px rgba(34, 197, 94, 0.3));
+            margin: 0 auto 32px auto;
         }
         
         .hero-badge {
@@ -391,16 +351,10 @@
         }
         
         .footer-logo {
-            width: 120px;
+            display: block;
+            width: 180px;
             height: auto;
-            margin-bottom: 24px;
-            opacity: 0.9;
-        }
-        
-        .footer-tagline {
-            font-size: 1.5em;
-            font-weight: 600;
-            margin-bottom: 8px;
+            margin: 0 auto 24px auto;
         }
         
         .footer-subtitle {
@@ -486,28 +440,12 @@
                 padding: 40px 24px;
             }
             
-            .header-content {
-                justify-content: center;
-            }
         }
     </style>
 </head>
 <body>
     <div class="bg-gradient"></div>
     
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="glogot1.png" alt="Genesis Logo" class="logo-icon">
-                    <div>
-                        <div class="logo-text">Genesis</div>
-                        <div class="logo-tagline">Sober & Free</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </header>
     
     <main>
         <section class="hero">
@@ -681,9 +619,8 @@
     
     <footer>
         <div class="container">
-            <img src="glogot1.png" alt="Genesis" class="footer-logo">
-            <div class="footer-tagline">Genesis - Sober & Free</div>
-            <p class="footer-subtitle">Your journey, your data, your rules.</p>
+            <img src="glogot.png" alt="Genesis - Sober & Free" class="footer-logo">
+            <p class="footer-subtitle">Your journey, your data, no BS.</p>
             
             <div class="footer-links">
                 <a href="privacy-policy.html">Privacy Policy</a>
