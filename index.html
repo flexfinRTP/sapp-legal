@@ -6,6 +6,17 @@
     <title>Genesis - Sober & Free | Your Recovery, Your Rules</title>
     <meta name="description" content="Track your clean days. No account, no cloud, no BS. Private & free. Genesis is the privacy-first sobriety and recovery tracker for people who mean it.">
     <meta name="keywords" content="sober, sobriety tracker, day counter, addiction recovery, clean time, quit drinking, quit alcohol, AA tracker, NA tracker, private sobriety app">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Genesis - Sober & Free">
+    <meta property="og:description" content="Track your clean days. No account, no cloud, no BS. Private & free.">
+    <meta property="og:image" content="glogot.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="glogot1.png">
+    <link rel="apple-touch-icon" href="glogot1.png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -81,13 +92,7 @@
         .logo-icon {
             width: 48px;
             height: 48px;
-            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            box-shadow: 0 0 30px var(--accent-glow);
+            object-fit: contain;
         }
         
         .logo-text {
@@ -104,8 +109,15 @@
         
         /* Hero */
         .hero {
-            padding: 100px 0 80px;
+            padding: 80px 0 60px;
             text-align: center;
+        }
+        
+        .hero-logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 32px;
+            filter: drop-shadow(0 0 40px rgba(34, 197, 94, 0.3));
         }
         
         .hero-badge {
@@ -195,16 +207,6 @@
             transform: translateY(-2px);
         }
         
-        /* Google Play badge styling */
-        .play-badge {
-            height: 60px;
-            transition: transform 0.3s ease;
-        }
-        
-        .play-badge:hover {
-            transform: scale(1.05);
-        }
-        
         /* Features Grid */
         .features {
             padding: 80px 0;
@@ -255,8 +257,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
             margin-bottom: 20px;
+        }
+        
+        .feature-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--accent);
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
         
         .feature-card h3 {
@@ -308,9 +319,13 @@
             border-radius: 8px;
         }
         
-        .privacy-item .icon {
-            color: #ef4444;
-            font-size: 1.2em;
+        .privacy-item svg {
+            width: 20px;
+            height: 20px;
+            stroke: #ef4444;
+            fill: none;
+            stroke-width: 2;
+            flex-shrink: 0;
         }
         
         .privacy-item span {
@@ -348,8 +363,12 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
         
-        .legal-card .icon {
-            font-size: 2.5em;
+        .legal-card svg {
+            width: 48px;
+            height: 48px;
+            stroke: var(--accent);
+            fill: none;
+            stroke-width: 1.5;
             margin-bottom: 16px;
         }
         
@@ -369,6 +388,13 @@
             padding: 60px 0 40px;
             border-top: 1px solid var(--border);
             text-align: center;
+        }
+        
+        .footer-logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 24px;
+            opacity: 0.9;
         }
         
         .footer-tagline {
@@ -444,6 +470,10 @@
                 padding: 60px 0 40px;
             }
             
+            .hero-logo {
+                width: 150px;
+            }
+            
             .stats-row {
                 gap: 24px;
             }
@@ -469,7 +499,7 @@
         <div class="container">
             <div class="header-content">
                 <a href="/" class="logo">
-                    <div class="logo-icon">🔥</div>
+                    <img src="glogot1.png" alt="Genesis Logo" class="logo-icon">
                     <div>
                         <div class="logo-text">Genesis</div>
                         <div class="logo-tagline">Sober & Free</div>
@@ -482,8 +512,14 @@
     <main>
         <section class="hero">
             <div class="container">
+                <img src="glogot.png" alt="Genesis - Sober & Free" class="hero-logo">
+                
                 <div class="hero-badge">
-                    🆓 <span>100% FREE</span> — All features, forever
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M8 12l2 2 4-4"/>
+                    </svg>
+                    <span>100% FREE</span> — All features, forever
                 </div>
                 
                 <h1>
@@ -531,37 +567,49 @@
                 
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">📊</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+                        </div>
                         <h3>Day Counter & Recovery Tracking</h3>
                         <p>Live streak counter with days, hours, minutes. Track 17 addiction types including alcohol, cannabis, opioids, gambling, and more.</p>
                     </div>
                     
                     <div class="feature-card">
-                        <div class="feature-icon">🔥</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
                         <h3>15-Minute Craving Timer</h3>
                         <p>Evidence-based urge surfing technique. Rotating faith-based motivational messages from 8 traditions to get you through.</p>
                     </div>
                     
                     <div class="feature-card">
-                        <div class="feature-icon">📈</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        </div>
                         <h3>Recovery Analytics</h3>
                         <p>HALT trigger analysis (Hungry, Angry, Lonely, Tired). Resilience metrics. See your patterns and celebrate your progress.</p>
                     </div>
                     
                     <div class="feature-card">
-                        <div class="feature-icon">⚖️</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                        </div>
                         <h3>Weight & BMI Tracking</h3>
                         <p>Log weight with trend visualization. BMI calculator with health categories. Set goals and track your journey.</p>
                     </div>
                     
                     <div class="feature-card">
-                        <div class="feature-icon">🏋️</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><path d="M14.4 14.4 9.6 9.6"/><path d="M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z"/><path d="m5.343 2.515 6.364 6.364"/><circle cx="12" cy="12" r="1"/></svg>
+                        </div>
                         <h3>Full Exercise Planner</h3>
                         <p>50+ exercises: bodyweight, strength, cardio, yoga. Drag-and-drop calendar. Recurring workout schedules.</p>
                     </div>
                     
                     <div class="feature-card">
-                        <div class="feature-icon">📤</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                        </div>
                         <h3>Share Your Wins</h3>
                         <p>Beautiful shareable achievement cards for milestones. Show your streak without exposing your data. Android widget included.</p>
                     </div>
@@ -581,27 +629,27 @@
                     
                     <div class="privacy-list">
                         <div class="privacy-item">
-                            <span class="icon">❌</span>
+                            <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                             <span>No account required</span>
                         </div>
                         <div class="privacy-item">
-                            <span class="icon">❌</span>
+                            <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                             <span>No cloud storage</span>
                         </div>
                         <div class="privacy-item">
-                            <span class="icon">❌</span>
+                            <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                             <span>No analytics or tracking</span>
                         </div>
                         <div class="privacy-item">
-                            <span class="icon">❌</span>
+                            <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                             <span>No ads - ever</span>
                         </div>
                         <div class="privacy-item">
-                            <span class="icon">❌</span>
+                            <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                             <span>No subscriptions</span>
                         </div>
                         <div class="privacy-item">
-                            <span class="icon">❌</span>
+                            <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                             <span>No fine print</span>
                         </div>
                     </div>
@@ -616,13 +664,13 @@
                 
                 <div class="legal-cards">
                     <a href="privacy-policy.html" class="legal-card">
-                        <div class="icon">🔒</div>
+                        <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                         <h3>Privacy Policy</h3>
                         <p>How we protect your data (spoiler: we don't collect it)</p>
                     </a>
                     
                     <a href="terms-of-service.html" class="legal-card">
-                        <div class="icon">📜</div>
+                        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
                         <h3>Terms of Service</h3>
                         <p>The rules of the road, written in plain English</p>
                     </a>
@@ -633,6 +681,7 @@
     
     <footer>
         <div class="container">
+            <img src="glogot1.png" alt="Genesis" class="footer-logo">
             <div class="footer-tagline">Genesis - Sober & Free</div>
             <p class="footer-subtitle">Your journey, your data, your rules.</p>
             

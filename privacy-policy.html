@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Genesis - Sober & Free</title>
+    <link rel="icon" type="image/png" href="glogot1.png">
+    <link rel="apple-touch-icon" href="glogot1.png">
     <style>
         :root {
             --primary: #0f0f0f;
@@ -128,6 +130,33 @@
             text-decoration: none;
         }
         
+        .header-bar {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .header-logo {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+        
+        .header-text {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: var(--text);
+        }
+        
+        .header-text span {
+            color: var(--text-muted);
+            font-weight: 400;
+            font-size: 0.8em;
+        }
+        
         .section {
             margin-bottom: 35px;
         }
@@ -207,6 +236,11 @@
 </head>
 <body>
     <div class="container">
+        <div class="header-bar">
+            <img src="glogot1.png" alt="Genesis Logo" class="header-logo">
+            <div class="header-text">Genesis <span>Sober & Free</span></div>
+        </div>
+        
         <a href="index.html" class="back-link">← Back to Home</a>
         
         <h1>Privacy Policy <span class="free-badge">100% FREE</span></h1>
