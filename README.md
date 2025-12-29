@@ -4,12 +4,12 @@ Legal documents for the Genesis mobile application, hosted on GitHub Pages.
 
 ## 📄 View Legal Documents
 
-- **[Privacy Policy](https://flexfinrtp.github.io/sapp-legal/privacy-policy.html)**
-- **[Terms of Service](https://flexfinrtp.github.io/sapp-legal/terms-of-service.html)**
+- **[Privacy Policy](https://flexfinrtp.github.io/genesis-app/privacy-policy.html)**
+- **[Terms of Service](https://flexfinrtp.github.io/genesis-app/terms-of-service.html)**
 
 ## 🏠 Landing Page
 
-- **[Genesis Home](https://flexfinrtp.github.io/sapp-legal/)**
+- **[Genesis Home](https://flexfinrtp.github.io/genesis-app/)**
 
 ## 📱 About Genesis
 
